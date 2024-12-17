@@ -1,0 +1,37 @@
+@import "breakpoints";
+
+.bringer-hero {
+  &-custom {
+    overflow : hidden;
+    @include media-breakpoint-up(lg) {
+      min-height : 637px;
+    }
+
+    .stg-container {
+      z-index  : 2;
+      position : relative;
+      .bringer-label {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    .bringer-hero-media {
+      position : absolute;
+      width    : 100%;
+      left     : 0;
+      top      : 0;
+      z-index  : 1;
+    }
+  }
+}
+
+.bringer-custom {
+  &-text {
+    font-size : var(--bringer-t-medium-fs);
+  }
+
+  &-title {
+    color : var(--bringer-c-title);
+  }
+
+}

@@ -106,6 +106,7 @@ Table of Contents
     01. GENERAL
     =========== */
 @import url("stg.css");
+@import url("custom.min.css");
 
 * {
    box-sizing: border-box;
@@ -465,6 +466,9 @@ h1 sup, h2 sup, h3 sup, h4 sup, h5 sup, h6 sup {
 }
 .bringer-accent {
     color: var(--bringer-s-text-accent);
+}
+.bringer-accent-dark {
+    color: var(--bringer-s-text-accent-dark);
 }
 .is-accented .bringer-accent {
     color: var(--bringer-s-accented-text);
@@ -4383,4 +4387,10 @@ button.pswp__button.bringer-pswp-next::after {
 [data-unload="zoom-in-up-left"].is-unloading,
 [data-appear="zoom-out-down-right"] {
     transform: translate(calc(-1 * var(--stea-move)), calc(-1 * var(--stea-move))) scale(var(--stea-zoom-out));
+}
+.spacer-sm {
+    height: 1.5rem;
+}
+.d-flex {
+    display: flex;
 }

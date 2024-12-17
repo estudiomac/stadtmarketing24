@@ -37,6 +37,8 @@
     /* Used as a color for text accents */
     --bringer-s-text-accent: #5C9DFF;
 
+    --bringer-s-text-accent-dark: #2b2b2b;
+
     /* Used as a text color for accented blocks */
     --bringer-s-accented-text: var(--bringer-s-heading);
 
@@ -45,7 +47,7 @@
 
     /* Used as a border color for accented blocks */
     --bringer-s-border-accent: #5C9DFF80;
-    
+
     /* A default semi-transparent border color for blocks with a shining effect */
     --bringer-s-border-mute: #F5F7FA0D;
 
@@ -60,19 +62,21 @@
 
     /* The cursor-followed backlight color. It uses the primary backlight color */
     --bringer-s-cursor-light: var(--bringer-s-backlight);
-    
+
     /* A horizontal side-fade gradient border color */
-    --bringer-c-border-gradient: linear-gradient(to left, transparent, var(--bringer-s-border), transparent); 
+    --bringer-c-border-gradient: linear-gradient(to left, transparent, var(--bringer-s-border), transparent);
 
 
     /* Main menu text color */
     --bringer-c-menu: var(--bringer-s-text);
-    
+
     /* Main menu hovered item text color */
     --bringer-c-menu-hover: var(--bringer-s-heading);
 
     /* Main menu current item text color */
     --bringer-c-menu-active: var(--bringer-s-heading);
+
+    --bringer-c-title: #323232;
 }
 
 /* ==========
@@ -82,7 +86,7 @@
     /* === FONT GROUPS === */
     /* Headings Font Family */
     --bringer-t-heading-ff: 'Inter', sans-serif;
-    
+
     /* Headings Font Weight */
     --bringer-t-heading-fw: 600;
 
@@ -166,7 +170,7 @@
 
     /* H3 Heading letter spacing */
     --bringer-t-h3-ls: -0.05em;
-    
+
     /* H3 Line Height */
     --bringer-t-h3-lh: 1.2em;
 
@@ -205,7 +209,7 @@
 
     /* H6 Heading letter spacing */
     --bringer-t-h6-ls: -0.02em;
-                    
+
     /* H6 Line Height */
     --bringer-t-h6-lh: 1.2em;
 
@@ -216,6 +220,8 @@
     /* === CONTENT === */
     /* Content Large text Font Size */
     --bringer-t-large-fs: 22px;
+
+    --bringer-t-medium-fs: 1.3rem;
 
     /* Content text Font Size */
     --bringer-t-content-fs: 16px;
@@ -232,7 +238,7 @@
     /* Meta Font Weight */
     --bringer-t-meta-fw: 600;
 
-    
+
     /* === FORMS AND FIELDS === */
     /* Button Font Size */
     --bringer-t-button-fs: 15px;
@@ -324,7 +330,7 @@
 @media only screen and (max-width: 1279px) {
     :root {
         --stg-container-width: 976px;
-        
+
         --bringer-t-h1-fs: 64px;
         --bringer-t-h2-fs: 45px;
         --bringer-t-h3-fs: 32px;
@@ -352,7 +358,7 @@
 
         --stg-gap: 24px;
         --stg-d-gap: 24px;
-        
+
         --stg-xs-gap: 6px;
         --stg-small-gap: 12px;
         --stg-large-gap: 48px;
@@ -420,7 +426,7 @@
 
         --stg-gap: 20px;
         --stg-d-gap: 20px;
-        
+
         --stg-xs-gap: 6px;
         --stg-small-gap: 12px;
         --stg-large-gap: 40px;
@@ -433,7 +439,7 @@
 
 /* ==========
    SVG IMAGES
-   ========== */ 
+   ========== */
    :root {
     --icon-chevron-left: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='m2 12 12.643 12L17 21.763 6.713 12 17 2.237 14.643 0Z'/%3E%3C/svg%3E");
     --icon-chevron-right: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M22 12 9.357 24 7 21.763 17.287 12 7 2.237 9.357 0Z'/%3E%3C/svg%3E");
