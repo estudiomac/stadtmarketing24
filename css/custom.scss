@@ -33,5 +33,14 @@
   &-title {
     color : var(--bringer-c-title);
   }
-
+}
+a.bringer-button {
+  &-primary {
+    background-color: var(--bringer-primary);
+    border-color: var(--bringer-primary);
+    &:hover, &:focus, &:active {
+      background-color: color-mix(in srgb, var(--bringer-primary) 90%, #000 );
+      border-color: color-mix(in srgb, var(--bringer-primary) 90%, #000 );
+    }
+  }
 }

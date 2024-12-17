@@ -106,7 +106,6 @@ Table of Contents
     01. GENERAL
     =========== */
 @import url("stg.css");
-@import url("custom.min.css");
 
 * {
    box-sizing: border-box;
@@ -4392,5 +4391,5 @@ button.pswp__button.bringer-pswp-next::after {
     height: 1.5rem;
 }
 .d-flex {
-    display: flex;
+    display: flex !important;
 }
