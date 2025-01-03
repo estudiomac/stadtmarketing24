@@ -199,7 +199,7 @@ class Bringer_Menu {
         }
 
         // Main Menu Active Indicator
-        this.core.$dom.header.append('<span class="bringer-active-menu-ind"></span>');
+        //this.core.$dom.header.append('<span class="bringer-active-menu-ind"></span>');
 
         // Add "has-children"
         this.$main.find('li').each(function() {
@@ -679,172 +679,172 @@ class Bringer_Masked {
             } else {
                 pos += 'h';
             }
-        }           
-         
+        }
+        
         // Mask Path
         switch (pos) {
             // Top Right
             case 'tr':
                 path += `
                 M0,${br}
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${(tw - cw - br)},0 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${(tw - cw)},${(ch - ibr)} 
-                a${ibr},${ibr} 0 0 0 ${ibr},${ibr} 
-                L${(tw - br)},${ch} 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${tw},${(th - br)} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L${br},${th} 
-                a${br},${br} 0 0 1 -${br},-${br} 
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${(tw - cw - br)},0
+                a${br},${br} 0 0 1 ${br},${br}
+                L${(tw - cw)},${(ch - ibr)}
+                a${ibr},${ibr} 0 0 0 ${ibr},${ibr}
+                L${(tw - br)},${ch}
+                a${br},${br} 0 0 1 ${br},${br}
+                L${tw},${(th - br)}
+                a${br},${br} 0 0 1 -${br},${br}
+                L${br},${th}
+                a${br},${br} 0 0 1 -${br},-${br}
                 `;
             break;
             // Bottom Right
             case 'br':
                 path += `
-                M0,${br} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${(tw - br)},0 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${tw},${(th - ch - br)} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L${(tw - cw + ibr)},${(th-ch)} 
-                a${ibr},${ibr} 0 0 0 -${ibr},${ibr} 
-                L${(tw - cw)},${(th - br)} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L${br},${th} 
-                a${br},${br} 0 0 1 -${br},-${br} 
+                M0,${br}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${(tw - br)},0
+                a${br},${br} 0 0 1 ${br},${br}
+                L${tw},${(th - ch - br)}
+                a${br},${br} 0 0 1 -${br},${br}
+                L${(tw - cw + ibr)},${(th-ch)}
+                a${ibr},${ibr} 0 0 0 -${ibr},${ibr}
+                L${(tw - cw)},${(th - br)}
+                a${br},${br} 0 0 1 -${br},${br}
+                L${br},${th}
+                a${br},${br} 0 0 1 -${br},-${br}
                 `;
             break;
             // Bottom Left
             case 'bl':
                 path += `
-                M0,${br} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${(tw - br)},0 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${tw},${(th - br)} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L${cw+br},${th} 
-                a${br},${br} 0 0 1 -${br},-${br} 
-                L${cw},${(th - ch + ibr)} 
-                a${ibr},${ibr} 0 0 0 -${ibr},-${ibr} 
-                L${br},${(th - ch)} 
-                a${br},${br} 0 0 1 -${br},-${br} 
+                M0,${br}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${(tw - br)},0
+                a${br},${br} 0 0 1 ${br},${br}
+                L${tw},${(th - br)}
+                a${br},${br} 0 0 1 -${br},${br}
+                L${cw+br},${th}
+                a${br},${br} 0 0 1 -${br},-${br}
+                L${cw},${(th - ch + ibr)}
+                a${ibr},${ibr} 0 0 0 -${ibr},-${ibr}
+                L${br},${(th - ch)}
+                a${br},${br} 0 0 1 -${br},-${br}
                 `;
             break;
             // Top Left
             case 'tl':
                 path += `
-                M0,${(ch+br)} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${cw-ibr},${ch} 
-                a${ibr},${ibr} 0 0 0 ${ibr},-${ibr} 
-                L${(cw)},${br} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${(tw - br)},0 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${tw},${(th - br)} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L${br},${th} 
-                a${br},${br} 0 0 1 -${br},-${br} 
+                M0,${(ch+br)}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${cw-ibr},${ch}
+                a${ibr},${ibr} 0 0 0 ${ibr},-${ibr}
+                L${(cw)},${br}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${(tw - br)},0
+                a${br},${br} 0 0 1 ${br},${br}
+                L${tw},${(th - br)}
+                a${br},${br} 0 0 1 -${br},${br}
+                L${br},${th}
+                a${br},${br} 0 0 1 -${br},-${br}
                 `;
             break;
             // Bottom Edge
-            case 'bh': 
+            case 'bh':
                 path += `
-                M0,${br} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${(tw - br)},0 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${tw},${th-br} 
-                a${br},${br} 0 0 1 ${-br},${br} 
-                L${(tw - d_rect.right + br)},${th} 
-                a${br},${br} 0 0 1 -${br},-${br} 
-                L${(tw - d_rect.right)},${d_rect.top + ibr} 
-                a${ibr},${ibr} 0 0 0 -${ibr},${-ibr} 
-                L${d_rect.left+ibr},${d_rect.top} 
-                a${ibr},${ibr} 0 0 0 -${ibr},${ibr} 
-                L${d_rect.left}, ${(th - br)} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L0,${th} 
+                M0,${br}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${(tw - br)},0
+                a${br},${br} 0 0 1 ${br},${br}
+                L${tw},${th-br}
+                a${br},${br} 0 0 1 ${-br},${br}
+                L${(tw - d_rect.right + br)},${th}
+                a${br},${br} 0 0 1 -${br},-${br}
+                L${(tw - d_rect.right)},${d_rect.top + ibr}
+                a${ibr},${ibr} 0 0 0 -${ibr},${-ibr}
+                L${d_rect.left+ibr},${d_rect.top}
+                a${ibr},${ibr} 0 0 0 -${ibr},${ibr}
+                L${d_rect.left}, ${(th - br)}
+                a${br},${br} 0 0 1 -${br},${br}
+                L0,${th}
                 `;
             break;
             // Top Edge
-            case 'th': 
+            case 'th':
                 path += `
-                M0,${br} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${(d_rect.left - br)},0 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${d_rect.left},${(ch - ibr)} 
-                a${ibr},${ibr} 0 0 0 ${ibr},${ibr} 
-                L${d_rect.left + cw - ibr},${ch} 
-                a${ibr},${ibr} 0 0 0 ${ibr},${-ibr} 
-                L${d_rect.left + cw},${br} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${(tw - br)},0 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${tw},${th - br} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L${br},${th} 
-                a${br},${br} 0 0 1 -${br},-${br} 
+                M0,${br}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${(d_rect.left - br)},0
+                a${br},${br} 0 0 1 ${br},${br}
+                L${d_rect.left},${(ch - ibr)}
+                a${ibr},${ibr} 0 0 0 ${ibr},${ibr}
+                L${d_rect.left + cw - ibr},${ch}
+                a${ibr},${ibr} 0 0 0 ${ibr},${-ibr}
+                L${d_rect.left + cw},${br}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${(tw - br)},0
+                a${br},${br} 0 0 1 ${br},${br}
+                L${tw},${th - br}
+                a${br},${br} 0 0 1 -${br},${br}
+                L${br},${th}
+                a${br},${br} 0 0 1 -${br},-${br}
                 `;
             break;
             // Left Edge
-            case 'vl': 
+            case 'vl':
                 path += `
-                M0,${br} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${(tw-br)},0 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${tw},${(th-br)} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L${br},${th} 
-                a${br},${br} 0 0 1 -${br},-${br} 
-                L0,${th - d_rect.bottom + br} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${cw - ibr},${th - d_rect.bottom} 
-                a${ibr},${ibr} 0 0 0 ${ibr},${-ibr} 
-                L${cw},${d_rect.top + ibr} 
-                a${ibr},${ibr} 0 0 0 ${-ibr},${-ibr} 
-                L${br},${d_rect.top} 
-                a${br},${br} 0 0 1 -${br},-${br} 
+                M0,${br}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${(tw-br)},0
+                a${br},${br} 0 0 1 ${br},${br}
+                L${tw},${(th-br)}
+                a${br},${br} 0 0 1 -${br},${br}
+                L${br},${th}
+                a${br},${br} 0 0 1 -${br},-${br}
+                L0,${th - d_rect.bottom + br}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${cw - ibr},${th - d_rect.bottom}
+                a${ibr},${ibr} 0 0 0 ${ibr},${-ibr}
+                L${cw},${d_rect.top + ibr}
+                a${ibr},${ibr} 0 0 0 ${-ibr},${-ibr}
+                L${br},${d_rect.top}
+                a${br},${br} 0 0 1 -${br},-${br}
                 `;
             break;
             // Right Edge
-            case 'vr': 
+            case 'vr':
                 path += `
-                M0,${br} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${(tw-br)},0 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${tw},${(d_rect.top - br)} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L${(tw - cw + ibr)},${d_rect.top} 
-                a${br},${br} 0 0 0 -${ibr},${ibr} 
-                L${(tw - cw)},${d_rect.top + ch - ibr} 
-                a${br},${br} 0 0 0 ${ibr},${ibr} 
-                L${(tw - br)},${(d_rect.top + ch)} 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${tw},${th - br} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L${br},${th} 
-                a${br},${br} 0 0 1 -${br},-${br} 
+                M0,${br}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${(tw-br)},0
+                a${br},${br} 0 0 1 ${br},${br}
+                L${tw},${(d_rect.top - br)}
+                a${br},${br} 0 0 1 -${br},${br}
+                L${(tw - cw + ibr)},${d_rect.top}
+                a${br},${br} 0 0 0 -${ibr},${ibr}
+                L${(tw - cw)},${d_rect.top + ch - ibr}
+                a${br},${br} 0 0 0 ${ibr},${ibr}
+                L${(tw - br)},${(d_rect.top + ch)}
+                a${br},${br} 0 0 1 ${br},${br}
+                L${tw},${th - br}
+                a${br},${br} 0 0 1 -${br},${br}
+                L${br},${th}
+                a${br},${br} 0 0 1 -${br},-${br}
                 `;
             break;
             // Default (no content area)
             default:
                 path += `
-                M0,${br} 
-                a${br},${br} 0 0 1 ${br},-${br} 
-                L${(tw - br)},0 
-                a${br},${br} 0 0 1 ${br},${br} 
-                L${tw},${(th - br)} 
-                a${br},${br} 0 0 1 -${br},${br} 
-                L${br},${th} 
-                a${br},${br} 0 0 1 -${br},-${br} 
+                M0,${br}
+                a${br},${br} 0 0 1 ${br},-${br}
+                L${(tw - br)},0
+                a${br},${br} 0 0 1 ${br},${br}
+                L${tw},${(th - br)}
+                a${br},${br} 0 0 1 -${br},${br}
+                L${br},${th}
+                a${br},${br} 0 0 1 -${br},-${br}
                 `;
             break;
         }
