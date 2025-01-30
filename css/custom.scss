@@ -107,3 +107,15 @@ a.bringer-button {
     display: none;
   }
 }
+
+table {
+border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  th, td {
+    border: 1px solid var(--bringer-s-text);
+    padding: .25rem 1rem;
+    text-align: left;
+  }
+}
+

@@ -682,7 +682,7 @@
                                 <h6>Rechtliches</h6>
                                 <div class="bringer-menu-widget">
                                     <ul>
-                                        <li><a href="#">Datenschutz</a></li>
+                                        <li><a href="datenschutz.html">Datenschutz</a></li>
                                         <li><a href="impressum.html">Impressum</a></li>
                                     </ul>
                                 </div>
@@ -695,7 +695,7 @@
             <!-- Footer Copyright Line -->
             <div class="bringer-footer-line stg-container">
                 <div class="align-center">
-                    Copyright &copy; 2024. Stadtgespräch GmbH
+                    Copyright &copy; <span id="year"></span>. Stadtgespräch GmbH
                 </div>
             </div><!-- bringer-footer-line -->
         </footer>
@@ -705,7 +705,9 @@
 
     <!-- Dynamic Backlight -->
     <div class="bringer-backlight"></div>
-
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <!-- JS Scripts -->
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/libs.js"></script>
