@@ -19,13 +19,12 @@
 
 .bringer-hero {
   &-custom {
-    overflow         : hidden;
-    background-color : white;
+    overflow : hidden;
     @include media-breakpoint-down(sm) {
-      min-height : 520px;
+      min-height : 557px;
     }
     @include media-breakpoint-up(lg) {
-      min-height : 637px;
+      min-height : 768px;
     }
 
     .stg-container {
@@ -38,14 +37,24 @@
     }
 
     .bringer-hero-media {
-      position : absolute;
-      width    : 100%;
-      left     : 0;
-      top      : 0;
-      z-index  : 1;
+      position         : absolute;
+      width            : 100%;
+      left             : 0;
+      top              : 0;
+      z-index          : 1;
+      background-color : black;
       @include media-breakpoint-down(sm) {
-        min-height : 520px;
+        min-height : 557px;
         opacity    : .3;
+      }
+
+      &-l {
+        display         : flex;
+        justify-content : center;
+      }
+
+      &-m {
+
       }
     }
   }
@@ -53,11 +62,12 @@
 
 .bringer-custom {
   &-text {
-    font-size : var(--bringer-t-medium-fs);
+    font-size : clamp(1rem, calc(0.96rem + 0.18vw), 1.25rem);
   }
 
   &-title {
     color : var(--bringer-c-title);
+    font-size: clamp(2.63rem, calc(2.5rem + 0.63vw), 3.5rem);
   }
 }
 
@@ -99,23 +109,40 @@ a.bringer-button {
 .bringer-active-menu-ind {
   display : none;
 }
+
+a.bringer-button {
+  font-weight : 700;
+  line-height : 1.6;
+  font-size   : 1.25rem;
+  color       : white;
+}
+
+.bringer-header-rp {
+  a.bringer-button {
+    font-weight : normal;
+    line-height : 1.1;
+    font-size   : 1rem;
+  }
+}
+
 .mobile-button-menu {
   @include media-breakpoint-down(sm) {
-    display: block;
+    display : block;
   }
   @include media-breakpoint-up(sm) {
-    display: none;
+    display : none;
   }
 }
 
 table {
-border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
+  border-collapse : collapse;
+  border-spacing  : 0;
+  width           : 100%;
+
   th, td {
-    border: 1px solid var(--bringer-s-text);
-    padding: .25rem 1rem;
-    text-align: left;
+    border     : 1px solid var(--bringer-s-text);
+    padding    : .25rem 1rem;
+    text-align : left;
   }
 }
 

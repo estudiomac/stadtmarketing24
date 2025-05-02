@@ -284,6 +284,11 @@ class Bringer_Mobile_Menu {
             });
         });
 
+        // Close menu on anchor links (href^="#")
+        this.$menu.find('a[href^="#"]').on('click', function() {
+            _self.$body.removeClass('show-menu');
+        });
+
         // Events
         jQuery('.bringer-mobile-menu-toggler').on('click', function() {
             _self.$body.toggleClass('show-menu');
