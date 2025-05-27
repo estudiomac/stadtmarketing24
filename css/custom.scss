@@ -63,11 +63,13 @@
 .bringer-custom {
   &-text {
     font-size : clamp(1rem, calc(0.96rem + 0.18vw), 1.25rem);
+    color     : #fefefe;
   }
 
   &-title {
-    color : var(--bringer-c-title);
-    font-size: clamp(2.63rem, calc(2.5rem + 0.63vw), 3.5rem);
+    color       : var(--bringer-c-title);
+    font-size   : clamp(2.63rem, calc(2.5rem + 0.63vw), 3.5rem);
+    text-shadow : 0 0 4px rgba(0, 0, 0, .9);
   }
 }
 
@@ -146,3 +148,25 @@ table {
   }
 }
 
+.trust-box {
+  align-items : center;
+  gap         : 0 1rem;
+  margin-top  : 1.5rem;
+
+  &-image {
+    &:not(:first-child) {
+      margin-left : -20px;
+    }
+
+    &-item {
+      border-radius : 100%;
+      max-width     : 48px;
+      border        : 2px solid #fff;
+    }
+  }
+}
+
+.bringer-portfolio-card-image {
+  display     : flex;
+  align-items : center;
+}
